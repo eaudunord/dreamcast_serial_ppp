@@ -22,6 +22,7 @@ The easiest way to get up and running hardware-wise would be to acquire the foll
  * Dreamcast SD Adapter
  * SD card sniffer (micro or full size)
  * USB to TTL serial adapter with a *cp2102n* chipset. This is the most reliable chip I've tested so far
+ 
 ![Screenshot](https://github.com/eaudunord/dc-taisen-netplay/blob/main/Materials.jpg?raw=true)
  
 Assembly:
@@ -30,11 +31,13 @@ Assembly:
  * Insert the SD card sniffer fully into the SD card slot on the SD adapter
  * Insert the SD adapter into the Serial port on the Dreamcast console
  * Note: A number of people have reported they need to ground CTS (CLK on the sniffer) to get things to work. 
-     * If you do this, RTS from the USB adapter isn't needed.      
+     * If you do this, RTS from the USB adapter isn't needed.
+	 
 ![Screenshot](https://github.com/eaudunord/dc-taisen-netplay/blob/main/ConnectionGuide.PNG?raw=true)
 
 
 If you want to solder directly to a serial port connector, refer to this pinout:
+
 ![Screenshot](https://github.com/eaudunord/dc-taisen-netplay/blob/main/DC_SD_Adapter_V2.jpg?raw=true)
 
 ## Connecting online
@@ -45,3 +48,15 @@ If you want to solder directly to a serial port connector, refer to this pinout:
 Games with official serial port support need to be configured to use it with a web browser. The best way to do this is with XDP or Dreamkey 3.0. The default settings of 115200 baud 8-N-1 are correct.
 
 The patch for Propeller arena changes its baud rate setting to 115200 so it becomes compatible with the Dreampi implementation.
+
+## Testing Status
+
+|Game|Region|Server connection|Multiplayer|Notes|
+|:---|:---|:---|:---|:---|
+|4x4 Evolution|NTSC-U|Yes|||
+|ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
+|Ooga Booga|NTSC-U|Yes|Yes|2 player tested|
+|Outtrigger|NTSC-U|Yes|||
+|Quake 3|NTSC-U|Yes|Yes|3 player tested|
+|Starlancer|NTSC-U|Yes|||
+|Unreal Tournament|NTSC-U|Yes|||
