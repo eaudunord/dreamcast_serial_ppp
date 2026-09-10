@@ -55,9 +55,11 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |:---|:---|:---|:---|:---|
 |4x4 Evolution|NTSC-U|Yes|||
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
-|Ooga Booga|NTSC-U|Yes|Yes|2 player tested|
+|Next Tetris|NTSC-U|Yes|||
+|Ooga Booga|NTSC-U|Yes|Yes|4 serial players extremely smooth|
 |Outtrigger|NTSC-U|Yes|||
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Starlancer|NTSC-U|Yes|||
 |Unreal Tournament|NTSC-U|Yes|||
+|Worms World Party|NTSC-U|Yes|||
