@@ -66,4 +66,5 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Sega Rally 2|NTSC-J|Yes|||
 |Starlancer|NTSC-U|Yes|||
 |Unreal Tournament|NTSC-U|Yes|||
+|Virtual On|NTSC-J|Yes|||
 |Worms World Party|NTSC-U|Yes|||
