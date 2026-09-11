@@ -59,6 +59,8 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Next Tetris|NTSC-U|Yes|||
 |Ooga Booga|NTSC-U|Yes|Yes|4 serial players extremely smooth|
 |Outtrigger|NTSC-U|Yes|||
+|Power Smash|NTSC-J|Yes|||
+|Pro Yakyuu Net|NTSC-J|Yes|||
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Sega Rally 2|NTSC-J|Yes|||
