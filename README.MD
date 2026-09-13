@@ -13,7 +13,7 @@ Disclaimer: ChatGPT 5.6 was employed in developing these patches.
 
 ## Patch inventory
 
-“Bytes affected” is the byte-for-byte difference between the patch's expected source file and its decoded result, summed across every file in the package; it includes added or removed bytes when a file changes size. For rebuilt WinCE ROM images, this count includes incidental binary-layout changes from rebuilding the image and therefore is larger than the amount of new networking logic. The Rune Jade package also includes the English translation and server patch, so most of its affected bytes are unrelated to serial support.
+“Bytes affected” is the byte-for-byte difference between the source file and the patched file(s), summed across every file patched; it includes added or removed bytes when a file changes size. For rebuilt WinCE binaries, this count includes incidental binary-layout changes from rebuilding the binary and therefore is larger than the amount of new networking logic. The Rune Jade package also includes the English translation and server patch, so most of its affected bytes are unrelated to serial support.
 
 | Game | File(s) patched | Bytes affected | High-level summary |
 |:---|:---|---:|:---|
