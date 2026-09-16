@@ -60,8 +60,9 @@ Assembly:
 |Dreamcast|Micro SD Sniffer|Serial Adapter|
 |:---|:---|:---|
 |TX|CMD|RX|
+|RX|DAT0|TX|
 |GND|GND|GND|
-|CTS|CLK|GND or RTS|
+|CTS|CLK|RTS|
 |RTS|CD|CTS|
 
 
