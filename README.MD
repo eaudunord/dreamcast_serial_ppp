@@ -61,7 +61,7 @@ Assembly:
      * If you do this, RTS from the USB adapter isn't needed.
 	 
 ## Connection Guide
-|Dreamcast|Micro SD Sniffer|Serial Adapter|
+|Out from Dreamcast|Micro SD Sniffer|In to Serial Adapter|
 |:---|:---|:---|
 |TX|CMD|RX|
 |RX|DAT0|TX|
