@@ -1,5 +1,7 @@
 # A collection of Dreamcast game patches to enable serial PPP
 
+**As of 2026-09-16 patched games now use hardware flow control (RTS/CTS). Please ensure your adapter includes those extra signal lines**
+
 The Sega Dreamcast has a rear serial port that can be used for various applications. There is official, but largely undocumented support for using the serial port for an external modem. Dreamkey 3.0 and later Dream Passport browsers can be configured to use the serial port to connect online. 
 
 Since Dreampi 2.0, the Dreampi script will check for a USB serial port and monitor it for Hayes AT commands related to modem initialization and dialing. If it detects a dial command, it will provide the appropriate responses to the Dreamcast and attempt to start a PPP session.
@@ -39,6 +41,8 @@ Disclaimer: ChatGPT 5.6 was employed in developing these patches.
 * USB-serial adapter AKA Coder's Cable (see details below)
 * Universal Dreamcast Patcher: https://github.com/DerekPascarella/UniversalDreamcastPatcher
 * Dreampi or Dreampi VM running version 2.0+
+	* Highly recommended to opt into auto updates for the support scripts so serial PPP updates get received.
+	* You can do this by deleting noautoupdates.txt on the rood of the SD card or at /boot directory.
  
 ## About the adapter
 The easiest way to get up and running hardware-wise would be to acquire the following:
