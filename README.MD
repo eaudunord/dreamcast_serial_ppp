@@ -2,6 +2,8 @@
 
 **As of 2026-09-16 patched games now use hardware flow control (RTS/CTS). Please ensure your adapter includes those extra signal lines**
 
+**Until there's a release in the Releases section of this page, consider everything Beta. Patches are subject to change at any time. Please report any issues you find**
+
 The Sega Dreamcast has a rear serial port that can be used for various applications. There is official, but largely undocumented support for using the serial port for an external modem. Dreamkey 3.0 and later Dream Passport browsers can be configured to use the serial port to connect online. 
 
 Since Dreampi 2.0, the Dreampi script will check for a USB serial port and monitor it for Hayes AT commands related to modem initialization and dialing. If it detects a dial command, it will provide the appropriate responses to the Dreamcast and attempt to start a PPP session.
@@ -15,12 +17,13 @@ Disclaimer: ChatGPT 5.6 was employed in developing these patches.
 
 ## Patch inventory
 
-“Bytes affected” is the byte-for-byte difference between the source file and the patched file(s), summed across every file patched; it includes added or removed bytes when a file changes size. For rebuilt WinCE binaries, this count includes incidental binary-layout changes from rebuilding the binary and therefore is larger than the amount of new networking logic. The Rune Jade package also includes the English translation and server patch, so most of its affected bytes are unrelated to serial support.
+“Bytes affected” is the byte-for-byte difference between the source file and the patched file(s), summed across every file patched; it includes added or removed bytes when a file changes size. For rebuilt WinCE binaries, this count includes incidental binary-layout changes from rebuilding the binary and therefore is larger than the amount of new networking logic. The Rune Jade package also includes the English translation and server patch, so most of its affected bytes are unrelated to serial support. Culdcept II likewise includes the English translation, which accounts for most of its affected bytes. PSO counts reflect changes to the compressed/encrypted files on disc, including restoration data in PAL/US IWASHI.SEA, rather than the much smaller changes to the decrypted executable; IP.BIN counts include only changed bootsector bytes.
 
 | Game | File(s) patched | Bytes affected | High-level summary |
 |:---|:---|---:|:---|
 | 4x4 Evolution (NTSC-U) | `0WINCEOS.BIN` | 3,061 | Configures and activates the WinCE COM1 serial driver at 115200 baud so the stock RAS/modem stack communicates through SCIF. |
 | ChuChu Rocket! (NTSC-U) | `1ST_READ.BIN` | 3,778 | Replaces the physical modem DTE transport with a 115200-baud SCIF driver while retaining the game's existing Hayes and PPP layers. |
+| Culdcept II (NTSC-J, English translation) | `1ST_READ.BIN`, `2_DP.BIN`, `CULD2.DAT`, `DPETC/MESSAGE.INI`, `DPETC/NTP.DPS` | 39,847,710 | Combines the English translation with a redirect to the game's existing 115200-baud SCIF transport with hardware flow control. |
 | Gundam: Federation vs. Zeon (NTSC-J, Disc 1) | `1ST_READ.BIN` | 18 | Redirects the game's modem transport to its existing SCIF implementation and selects the 115200-baud serial configuration. |
 | Gundam: Federation vs. Zeon DX (NTSC-J, Disc 2) | `1ST_READ.BIN` | 18 | Redirects the game's modem transport to its existing SCIF implementation and selects the 115200-baud serial configuration. |
 | The Next Tetris: On-line Edition (NTSC-U) | `0WINCEOS.BIN` | 266,299 | Rebuilds the WinCE image with COM1 registered and activated at 115200 baud, allowing the stock dial-up stack to use SCIF. |
@@ -28,6 +31,9 @@ Disclaimer: ChatGPT 5.6 was employed in developing these patches.
 | Outtrigger (NTSC-U) | `1ST_READ.BIN` | 8 | Selects the game's existing serial communications path and corrects its send-readiness behavior so gameplay traffic leaves through SCIF. |
 | Power Smash (NTSC-J) | `1ST_READ.BIN` | 1,775 | Substitutes a 115200-baud SCIF DTE using the game's original DTE storage and adds the missing LCP echo-response handling. |
 | Pro Yakyuu Team de Asobou Net! (NTSC-J) | `NET_DLL.BIN` | 1,621 | Replaces the network library's physical modem DTE with a 115200-baud SCIF implementation while retaining its Iwango protocol stack. |
+| Phantasy Star Online Ver. 2 (PAL v1.000) | `DP_ADDRESS.JPN`, `IWASHI.SEA`, `bootsector/IP.BIN` | 809,255 | Enables the native 115200-baud SCIF transport with hardware flow control and hangup fixes, and adds the Ives-style Ultimate map fix using the original regional bootsector. |
+| Phantasy Star Online Ver. 2 (NTSC-U v1.004) | `DP_ADDRESS.JPN`, `IWASHI.SEA`, `bootsector/IP.BIN` | 685,425 | Enables native 115200-baud SCIF with hardware flow control and hangup fixes, bypasses the Hunter's License check, and adds the Ives-style Ultimate map fix. |
+| Phantasy Star Online Ver. 2 (NTSC-J v1.014) | `DP_ADDRESS.JPN`, `bootsector/IP.BIN` | 1,037,218 | Enables native 115200-baud SCIF with hardware flow control and hangup fixes, bypasses the Hunter's License check, and adds the Ives-style Ultimate map fix. |
 | Quake III Arena (NTSC-U) | `QUAKE3/Q3_USA.BIN` | 3,591 | Replaces the modem's low-level DTE API with a KOS-derived 115200-baud SCIF driver while leaving Quake III's modem, Hayes, and PPP layers intact. |
 | Rune Jade (NTSC-J, English + server patch) | `0WINCEOS.BIN`, `ADC/MAIN.ADO`, `OTHER/E_CM.PVR`, `OTHER/G512.PVR`, `OTHER/G512_2.PVR`, `OTHER/NET1.PVR`, `OTHER/NML.PVR`, `OTHER/SE_CHR1.PVR`, `OTHER/TITLE.PVR`, `WINCE/IWLOBBYENGINE.DLL`, `WINCE/RUNE.EXE` | 1,820,262 | Combines the English and replacement-server changes with a WinCE COM1/115200 configuration that routes dial-up networking through SCIF. |
 | Sega Rally 2 (NTSC-J) | `0WINCEOS.BIN`, `DWANGO.DLL` | 5,749 | Registers COM1 at 115200 baud with hardware handshaking and redirects the DWANGO dial-up device selection from the modem to serial. |
@@ -89,12 +95,16 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |:---|:---|:---|:---|:---|
 |4x4 Evolution|NTSC-U|Yes|||
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
+|Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Gundam Federation vs Zeon|NTSC-J|Yes|||
 |Next Tetris|NTSC-U|Yes|||
 |Ooga Booga|NTSC-U|Yes|Yes|4 serial players extremely smooth|
 |Outtrigger|NTSC-U|Yes|||
 |Power Smash|NTSC-J|Yes|||
 |Pro Yakyuu Net|NTSC-J|Yes|||
+|PSO Ver2|NTSC-J|Yes||Includes ultimate map fix|
+|PSO Ver2|NTSC-U|Yes||Includes ultimate map fix|
+|PSO Ver2|PAL|Yes|Yes|Includes ultimate map fix|
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Sega Rally 2|NTSC-J|Yes|||
