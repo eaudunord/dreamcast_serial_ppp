@@ -96,19 +96,22 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |4x4 Evolution|NTSC-U|Yes|||
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
 |Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
+|Golf Shiyouyo 2|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Gundam Federation vs Zeon|NTSC-J|Yes|||
+|NBA2K2|Yes|||
 |Next Tetris|NTSC-U|Yes|||
+|NFL2K2|Yes|||
 |Ooga Booga|NTSC-U|Yes|Yes|4 serial players extremely smooth|
 |Outtrigger|NTSC-U|Yes|||
-|Power Smash|NTSC-J|Yes|||
+|Power Smash|NTSC-J|Yes|Yes||
 |Pro Yakyuu Net|NTSC-J|Yes|||
 |PSO Ver2|NTSC-J|Yes||Includes ultimate map fix|
 |PSO Ver2|NTSC-U|Yes||Includes ultimate map fix|
 |PSO Ver2|PAL|Yes|Yes|Includes ultimate map fix|
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
-|Sega Rally 2|NTSC-J|Yes|||
+|Sega Rally 2|NTSC-J|Yes|Yes||
 |Starlancer|NTSC-U|Yes|||
-|Unreal Tournament|NTSC-U|Yes|||
+|Unreal Tournament|NTSC-U|Yes|Yes||
 |Virtual On|NTSC-J|Yes|||
 |Worms World Party|NTSC-U|Yes|||
