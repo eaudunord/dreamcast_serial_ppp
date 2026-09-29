@@ -98,9 +98,9 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Golf Shiyouyo 2|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Gundam Federation vs Zeon|NTSC-J|Yes|||
-|NBA2K2|Yes|||
+|NBA2K2|NTSC-U|Yes|||
 |Next Tetris|NTSC-U|Yes|||
-|NFL2K2|Yes|||
+|NFL2K2|NTSC-U|Yes|||
 |Ooga Booga|NTSC-U|Yes|Yes|4 serial players extremely smooth|
 |Outtrigger|NTSC-U|Yes|||
 |Power Smash|NTSC-J|Yes|Yes||
@@ -115,3 +115,4 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Unreal Tournament|NTSC-U|Yes|Yes||
 |Virtual On|NTSC-J|Yes|||
 |Worms World Party|NTSC-U|Yes|||
+|WSB2K2|NTSC-U|Yes||Apply xdelta patch to track05.bin of Tosec release|
