@@ -110,6 +110,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |PSO Ver2|PAL|Yes|Yes|Includes ultimate map fix|
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
+|Speed Devils Online|NTSC-U|Yes|||
 |Sega Rally 2|NTSC-J|Yes|Yes||
 |Starlancer|NTSC-U|Yes|||
 |Unreal Tournament|NTSC-U|Yes|Yes||
