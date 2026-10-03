@@ -94,6 +94,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Game|Region|Server connection|Multiplayer|Notes|
 |:---|:---|:---|:---|:---|
 |4x4 Evolution|NTSC-U|Yes|||
+|Bomberman Online|NTSC-U|Yes||
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
 |Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Daytona USA|NTSC-U|Yes||Browser also patched|
@@ -113,6 +114,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Quake 3|NTSC-U|Yes|Yes|3 player tested|
 |Rune Jade|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Speed Devils Online|NTSC-U|Yes|||
+|Sega Marine Fishing|NTSC-U|NA|NA|In-game browser patched|
 |Sega Rally 2|NTSC-J|Yes|Yes||
 |Starlancer|NTSC-U|Yes|||
 |Unreal Tournament|NTSC-U|Yes|Yes||
