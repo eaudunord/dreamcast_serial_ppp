@@ -96,8 +96,10 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |4x4 Evolution|NTSC-U|Yes|||
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
 |Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
+|Daytona USA|NTSC-U|Yes||Browser also patched|
 |Golf Shiyouyo 2|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Gundam Federation vs Zeon|NTSC-J|Yes|||
+|Jet Grind Radio|NTSC-U|NA|NA|In-game browser patched|
 |NBA2K2|NTSC-U|Yes|||
 |Next Tetris|NTSC-U|Yes|||
 |NFL2K2|NTSC-U|Yes|||
@@ -114,6 +116,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Sega Rally 2|NTSC-J|Yes|Yes||
 |Starlancer|NTSC-U|Yes|||
 |Unreal Tournament|NTSC-U|Yes|Yes||
+|Vanishing Point|Yes|NA||
 |Virtual On|NTSC-J|Yes|||
 |Worms World Party|NTSC-U|Yes|||
 |WSB2K2|NTSC-U|Yes||Apply xdelta patch to track05.bin of Tosec release|
