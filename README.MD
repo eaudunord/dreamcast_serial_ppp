@@ -98,6 +98,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |ChuChu Rocket|NTSC-U|Yes|Yes|Input delay still exists|
 |Culdcept II|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Daytona USA|NTSC-U|Yes||Browser also patched|
+|F355 Challenge|NTSC-U|Yes||Browser patched. Link mode tunnel also added|
 |Golf Shiyouyo 2|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Gundam Federation vs Zeon|NTSC-J|Yes|||
 |Jet Grind Radio|NTSC-U|NA|NA|In-game browser patched|
