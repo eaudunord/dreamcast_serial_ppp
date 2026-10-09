@@ -118,6 +118,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Sega Marine Fishing|NTSC-U|NA|NA|In-game browser patched|
 |Sega Rally 2|NTSC-J|Yes|Yes||
 |Starlancer|NTSC-U|Yes|||
+|Star Wars Episode I Racer|NTSC-U|Yes|NA|Browser patched|
 |Unreal Tournament|NTSC-U|Yes|Yes||
 |Vanishing Point|Yes|NA||
 |Virtual On|NTSC-J|Yes|||
