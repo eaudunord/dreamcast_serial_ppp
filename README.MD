@@ -117,6 +117,7 @@ The patch for Propeller arena changes its baud rate setting to 115200 so it beco
 |Speed Devils Online|NTSC-U|Yes|||
 |Sega Marine Fishing|NTSC-U|NA|NA|In-game browser patched|
 |Sega Rally 2|NTSC-J|Yes|Yes||
+|Sega Tetris|NTSC-J|Yes||Apply to clean NTSC-J rip|
 |Starlancer|NTSC-U|Yes|||
 |Star Wars Episode I Racer|NTSC-U|Yes|NA|Browser patched|
 |Unreal Tournament|NTSC-U|Yes|Yes||
