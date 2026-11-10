@@ -22,7 +22,7 @@ Disclaimer: ChatGPT 5.6 was employed in developing these patches.
 * Dreampi or Dreampi VM running version 2.0+
 	* **Highly recommended to opt into auto updates for the support scripts so serial PPP updates get received.** 
 	* **Some games may require these updates to function**
-	* **You can do this by deleting noautoupdates.txt on the rood of the SD card or at /boot directory.**
+	* **You can do this by deleting noautoupdates.txt on the rood of the SD card or at /boot directory and rebooting**
  
 ## About the adapter
 The easiest way to get up and running hardware-wise would be to acquire the following:
